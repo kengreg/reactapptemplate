@@ -30,6 +30,10 @@ import React from 'react';
 //reactdom is the same as append to dom
 import ReactDOM from 'react-dom';
 
+//import boostrap using npm
+//npm install boostrap
+import './components/styles/bootstrap.min.css';
+import './global.css';
 //getting the component created by me
 import Badge from "./components/Badge";
 

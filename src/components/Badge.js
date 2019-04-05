@@ -16,11 +16,11 @@ class Badge extends React.Component{
 			</div>
 			<div className="Badge__section-info">
 				<p>Frontend Enginner</p>
-				<p>@twitter</p>
-				<footer className="Badge__footer">
-				<p>footer!!!</p>
-				</footer>
+				<div>@twitter</div>
 			</div>
+			<footer className="Badge__footer">
+			<p>footer!!!</p>
+			</footer>
 		</article>
 	}
 
