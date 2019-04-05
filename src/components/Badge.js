@@ -1,12 +1,13 @@
 import React from "react";
 
+import confLogo from "../images/badge-header.svg";
 //the components are class , so you need to create them using class and the name, then the class will extends to the React.component
 class Badge extends React.Component{
 	//all components need at least 1 method, the method is Render
 	render(){
 		return <article>
 			<header>
-				<img src="" alt="logo"/>
+				<img src={confLogo} alt="logo"/>
 			</header>
 			<div>
 				<img src="" alt="avatar"/>
