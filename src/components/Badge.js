@@ -6,17 +6,20 @@ import confLogo from "../images/badge-header.svg";
 class Badge extends React.Component{
 	//all components need at least 1 method, the method is Render
 	render(){
+
+
+
 		return <article className="Badge">
 			<header className="Badge__header">
 				<img src={confLogo} alt="logo"/>
 			</header>
 			<div className="Badge__section-name">
-				<img className="Badge__avatar" src="https://store.playstation.com/store/api/chihiro/00_09_000/container/TH/en/999/HP0082-NPHP00069_00-AVADISSIDIA00019/1530784420000/image?w=240&h=240&bg_color=000000&opacity=100&_version=00_09_000" alt="avatar"/>
-				<h1>My first app <br />using React</h1>
+				<img className="Badge__avatar" src={this.props.img} alt="avatar"/>
+				<h1>{this.props.firstName}<br />{this.props.lastName}</h1>
 			</div>
 			<div className="Badge__section-info">
-				<p>Frontend Enginner</p>
-				<div>@twitter</div>
+				<p>{this.props.jobtitle}</p>
+				<div>@{this.props.twitter}</div>
 			</div>
 			<footer className="Badge__footer">
 			<p>footer!!!</p>

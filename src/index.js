@@ -53,4 +53,10 @@ const container = document.getElementById('app');
 
 //ReactDOM.render(___what__, ___where____);
 //To react render need to give an element , even do its a component you need to put it on brackets
-ReactDOM.render(< Badge />, container);
+ReactDOM.render(< Badge 
+	firstName="hello1" 
+	lastName="hello2" 
+	jobtitle="frontend enginner" 
+	twitter="twitter" 
+	img= "https://store.playstation.com/store/api/chihiro/00_09_000/container/TH/en/999/HP0082-NPHP00069_00-AVADISSIDIA00019/1530784420000/image?w=240&h=240&bg_color=000000&opacity=100&_version=00_09_000"
+	/>, container);
