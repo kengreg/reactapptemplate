@@ -19,7 +19,7 @@ class Badge extends React.Component{
 			</header>
 			<div className="Badge__section-name">
 				<img className="Badge__avatar img-fluid" src={this.props.img} alt="avatar"/>
-				<h1>{this.props.firstName}<br />{this.props.lastName}</h1>
+				<h1>{this.props.firstname}<br />{this.props.lastname}</h1>
 			</div>
 			<div className="Badge__section-info">
 				<p>{this.props.jobtitle}</p>
@@ -35,3 +35,4 @@ class Badge extends React.Component{
 
 //to export a component from this file to other
 export default Badge;
+
