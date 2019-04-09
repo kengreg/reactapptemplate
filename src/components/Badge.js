@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./styles/Badge.css";
-import confLogo from "../images/badge-header.svg";
+import confLogo from "../images/badge-header.png";
 //the components are class , so you need to create them using class and the name, then the class will extends to the React.component
 class Badge extends React.Component{
 	//all components need at least 1 method, the method is Render
@@ -11,10 +11,14 @@ class Badge extends React.Component{
 
 		return <article className="Badge">
 			<header className="Badge__header">
-				<img src={confLogo} alt="logo"/>
+			<div className="row">
+				<div className="col-6">
+					<img className="img-fluid" src={confLogo} alt="logo"/>
+				</div>
+			</div>
 			</header>
 			<div className="Badge__section-name">
-				<img className="Badge__avatar" src={this.props.img} alt="avatar"/>
+				<img className="Badge__avatar img-fluid" src={this.props.img} alt="avatar"/>
 				<h1>{this.props.firstName}<br />{this.props.lastName}</h1>
 			</div>
 			<div className="Badge__section-info">
