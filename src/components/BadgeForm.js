@@ -7,11 +7,11 @@ class BadgeForm extends React.Component{
 	//as soon as you use this.state or other you need to initializate the state. You can do it using an empty object
 	//as in any programming language you must put the variables in empty first before use them.
 	 state = {
-		firstname: '',
-		lastname: '',
-		email: '',
-		jobtitle: 'Designer',
-		twitter: ''
+		// firstname: '',
+		// lastname: '',
+		// email: '',
+		// jobtitle: 'Designer',
+		// twitter: ''
 	};
 	//all components need at least 1 method, the method is Render
 	/*handleChange = (e) => {
@@ -43,8 +43,7 @@ class BadgeForm extends React.Component{
 						<div className="form-group">
 							<label>First Name</label>
 							<input 
-							onChange={this.props.onChange
-} 
+							onChange={this.props.onChange} 
 							className="form-control" 
 							type="text" 
 							name="firstname"
@@ -54,8 +53,7 @@ class BadgeForm extends React.Component{
 						<div className="form-group">
 							<label>Last Name</label>
 							<input 
-							onChange={this.props.onChange
-} 
+							onChange={this.props.onChange} 
 							className="form-control" 
 							type="text" 
 							name="lastname"
@@ -65,8 +63,7 @@ class BadgeForm extends React.Component{
 						<div className="form-group">
 							<label>Email</label>
 							<input 
-							onChange={this.props.onChange
-} 
+							onChange={this.props.onChange} 
 							className="form-control" 
 							type="email" 
 							name="email"
@@ -76,8 +73,7 @@ class BadgeForm extends React.Component{
 						<div className="form-group">
 							<label>Job Title</label>
 							<input 
-							onChange={this.props.onChange
-} 
+							onChange={this.props.onChange} 
 							className="form-control" 
 							type="text" 
 							name="jobtitle"
@@ -87,8 +83,7 @@ class BadgeForm extends React.Component{
 						<div className="form-group">
 							<label>Twitter</label>
 							<input 
-							onChange={this.props.onChange
-} 
+							onChange={this.props.onChange} 
 							className="form-control" 
 							type="text" 
 							name="twitter"

@@ -7,15 +7,13 @@ import Badge from "../components/Badge";
 import BadgeForm from "../components/BadgeForm";
 
 class BadgeNew extends React.Component{
-	state = {
-		form: {}
-	}
+	state = { form: {} };
 
 	handleChange = e => {
+		const nextForm = this.state.form
+		nextForm[e.target.name] = e.target.value;
 		this.setState({
-			form:{
-				[e.target.name]: e.target.value
-			}
+			form: nextForm,
 		})
 	}
 	render(){
