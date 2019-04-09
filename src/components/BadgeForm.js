@@ -6,13 +6,13 @@ import "./styles/Badge.css";
 class BadgeForm extends React.Component{
 	//as soon as you use this.state or other you need to initializate the state. You can do it using an empty object
 	//as in any programming language you must put the variables in empty first before use them.
-	 state = {
-		// firstname: '',
-		// lastname: '',
-		// email: '',
-		// jobtitle: 'Designer',
-		// twitter: ''
-	};
+	//  state = {
+	// 	// firstname: '',
+	// 	// lastname: '',
+	// 	// email: '',
+	// 	// jobtitle: 'Designer',
+	// 	// twitter: ''
+	// };
 	//all components need at least 1 method, the method is Render
 	/*handleChange = (e) => {
 		// console.log({
@@ -31,7 +31,7 @@ class BadgeForm extends React.Component{
 	handleSubmit = (e) => {
 		e.preventDefault();
 		console.log("Form was submitted");
-		console.log(this.state);
+		console.log(this.props.formValues);
 	};
 
 	render(){
@@ -47,7 +47,7 @@ class BadgeForm extends React.Component{
 							className="form-control" 
 							type="text" 
 							name="firstname"
-							value = {this.state.firstname}
+							value = {this.props.formValues.firstname}
 							/>
 						</div>
 						<div className="form-group">
@@ -57,7 +57,7 @@ class BadgeForm extends React.Component{
 							className="form-control" 
 							type="text" 
 							name="lastname"
-							value = {this.state.lastname}
+							value = {this.props.formValues.lastname}
 							/>
 						</div>
 						<div className="form-group">
@@ -67,7 +67,7 @@ class BadgeForm extends React.Component{
 							className="form-control" 
 							type="email" 
 							name="email"
-							value = {this.state.email}
+							value = {this.props.formValues.email}
 							/>
 						</div>
 						<div className="form-group">
@@ -77,7 +77,7 @@ class BadgeForm extends React.Component{
 							className="form-control" 
 							type="text" 
 							name="jobtitle"
-							value = {this.state.jobtitle}
+							value = {this.props.formValues.jobtitle}
 							/>
 						</div>
 						<div className="form-group">
@@ -87,7 +87,7 @@ class BadgeForm extends React.Component{
 							className="form-control" 
 							type="text" 
 							name="twitter"
-							value = {this.state.twitter}
+							value = {this.props.formValues.twitter}
 							/>
 						</div>
 
