@@ -12,9 +12,9 @@ class BadgeForm extends React.Component{
 		email: '',
 		jobtitle: 'Designer',
 		twitter: ''
-		};
+	};
 	//all components need at least 1 method, the method is Render
-	handleChange = (e) => {
+	/*handleChange = (e) => {
 		// console.log({
 		// 	name: e.target.name,
 		// 	value: e.target.value
@@ -24,7 +24,7 @@ class BadgeForm extends React.Component{
 			[e.target.name]:e.target.value
 		});
 
-	};
+	};*/
 	handleClick = (e) => {
 		console.log("Button was clicked");
 	};
@@ -43,7 +43,8 @@ class BadgeForm extends React.Component{
 						<div className="form-group">
 							<label>First Name</label>
 							<input 
-							onChange={this.handleChange} 
+							onChange={this.props.onChange
+} 
 							className="form-control" 
 							type="text" 
 							name="firstname"
@@ -53,7 +54,8 @@ class BadgeForm extends React.Component{
 						<div className="form-group">
 							<label>Last Name</label>
 							<input 
-							onChange={this.handleChange} 
+							onChange={this.props.onChange
+} 
 							className="form-control" 
 							type="text" 
 							name="lastname"
@@ -63,7 +65,8 @@ class BadgeForm extends React.Component{
 						<div className="form-group">
 							<label>Email</label>
 							<input 
-							onChange={this.handleChange} 
+							onChange={this.props.onChange
+} 
 							className="form-control" 
 							type="email" 
 							name="email"
@@ -73,7 +76,8 @@ class BadgeForm extends React.Component{
 						<div className="form-group">
 							<label>Job Title</label>
 							<input 
-							onChange={this.handleChange} 
+							onChange={this.props.onChange
+} 
 							className="form-control" 
 							type="text" 
 							name="jobtitle"
@@ -83,7 +87,8 @@ class BadgeForm extends React.Component{
 						<div className="form-group">
 							<label>Twitter</label>
 							<input 
-							onChange={this.handleChange} 
+							onChange={this.props.onChange
+} 
 							className="form-control" 
 							type="text" 
 							name="twitter"
