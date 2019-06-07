@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles/BadgeNew.css";
 import Navbar from "../components/Navbar";
-import logo from "../images/logo.jpg";
-import header from "../images/badge-header.png";
+import logo from "../images/avatar.jpg";
+import header from "../images/dissidia.png";
 import Badge from "../components/Badge";
 import BadgeForm from "../components/BadgeForm";
 
@@ -57,9 +57,3 @@ class BadgeNew extends React.Component{
 }
 
 export default BadgeNew;
-
-
-
-
-
-

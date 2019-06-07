@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./styles/Badge.css";
-import confLogo from "../images/badge-header.png";
+import confLogo from "../images/dissidia.png";
 //the components are class , so you need to create them using class and the name, then the class will extends to the React.component
 class Badge extends React.Component{
 	//all components need at least 1 method, the method is Render

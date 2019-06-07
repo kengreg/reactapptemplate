@@ -8,7 +8,7 @@
 
 .Badge__header {
   padding: 0.5rem 0;
-  height: 80px;
+  /*height: 80px;*/
   background: #1B1B25;
   display: flex;
   justify-content: center;
@@ -46,4 +46,9 @@
   color: #98CA3F;
   font-weight: bold;
   font-style: italic;
+}
+
+#app .btn-primary{
+  background-color: #733e97;
+  border-color: #5244aa;
 }
