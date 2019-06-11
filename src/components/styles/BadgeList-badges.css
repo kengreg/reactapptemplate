@@ -1,0 +1,23 @@
+
+.Badge__box{
+    background:white;
+    border-radius:8px;
+    box-shadow:0 0 3px 0px gray;
+    margin:0 0 10px 0;
+    padding:1%;
+    width:100%;
+}
+.Badge__figure-img{
+  width:25%;
+}
+.Badge__figure-caption{
+    padding: 0  0 0 5%;
+    width:75%;
+}
+.Badge__figure-caption h4{
+    font-size:16px;
+    color:cornflowerblue;
+}
+.Badge__user-details dd{
+    padding:0;
+}

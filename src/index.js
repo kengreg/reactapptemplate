@@ -36,6 +36,7 @@ import './components/styles/bootstrap.min.css';
 import './global.css';
 //getting the component created by me
 import BadgeNew from "./pages/BadgeNew";
+import Badges from "./pages/Badges";
 
 // const jsx = <h1>Hello again in react</h1>;
 /*** const element = React.createElement('tag', {atributo}, 'contenido del tag'); ***/
@@ -53,4 +54,4 @@ const container = document.getElementById('app');
 
 //ReactDOM.render(___what__, ___where____);
 //To react render need to give an element , even do its a component you need to put it on brackets
-ReactDOM.render(< BadgeNew />, container);
+ReactDOM.render(< Badges />, container);
