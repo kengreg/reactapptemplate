@@ -8,10 +8,10 @@ class BadgesList extends React.Component{
             <ul className='list-unstyled Badge__list row'>
                 {this.props.badges.map(badge => {
                     return(
-                        <li key={badge.id} className="col-4">
+                        <li key={badge.id} className="col-xs-12 col-md-6 col-lg-4">
                          <figure className="Badge__box d-flex">
                              <div className="Badge__figure-img">
-                                <img src={badge.avatarUrl} className="rounded-circle img-fluid"/>
+                                <img src={badge.avatarUrl} className="rounded-circle img-fluid" alt="{badge.firstName} {badge.lastName}"/>
                              </div>
                              <figcaption className="Badge__figure-caption">
                                  <h4 className="font-weight-bold">{badge.firstName} {badge.lastName}</h4>
@@ -30,5 +30,6 @@ class BadgesList extends React.Component{
         )
     }
 }
+
 
 export default BadgesList;

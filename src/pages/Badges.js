@@ -2,6 +2,7 @@ import React from "react";
 import './styles/Badges.css';
 import confLogo from '../images/dissidia.png';
 import BadgesList from "../components/BadgesList";
+import {Link} from 'react-router-dom';
 
 class Badges extends React.Component{
     state = {
@@ -49,7 +50,7 @@ class Badges extends React.Component{
 
                 <div className="Badges__container">
                     <div className="Badges__buttons">
-                        <a href="/badges/new" className="btn btn-primary">New Badge</a>
+                        <Link to="/badges/new" className="btn btn-primary">New Badge</Link>
                     </div>
                 </div>
 
