@@ -8,6 +8,7 @@ import ReactDOM from 'react-dom';
 //npm install boostrap
 import './components/styles/bootstrap.min.css';
 import './global.css';
+import './components/styles/layout.css';
 //this will be for the react Router
 
 import App from './components/App';

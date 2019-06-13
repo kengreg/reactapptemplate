@@ -1,0 +1,57 @@
+
+.BadgeHome-HeroHeader{
+    display:flex;
+    justify-content: flex-end;
+    width:100%;
+}
+.BadgeHome-captionLink{
+    padding:5px 0;
+}
+.BadgeHome-Logocaption{
+    color:white;
+}
+.BadgeHome-Logocaption h2{
+    font-size:22px;
+    font-weight: bold;
+    text-shadow: 0 2px 3px black;
+}
+.BadgeHome-content{
+    background: black;
+    color:white;
+    padding:20px 0 0 0;
+}
+
+@media all and (min-width:576px){
+    body .BadgeHome-Logocaption{
+        text-align:right !important;
+    }
+    .BadgeHome-Logo{
+        margin:25px 5% 0 0;
+        max-width:540px;
+    }
+    .BadgeHome-Logo figcaption{
+        max-width: 500px;
+    }
+}
+@media all and (max-width:575px){
+    .BadgeHome-captionLink .btn-action{
+        max-width: 200px;
+        margin:0 auto;
+    }
+    .BadgeHome-captionLink{
+        text-align: center;
+    }
+    .BadgeHome-Logo figcaption{
+        position:absolute;
+        margin: 0 auto;
+        bottom:-170px;
+        width:100%;
+    }
+    .BadgeHome-HeroHeader{
+        position:relative;
+    }
+    .BadgeHome-content{
+        margin-top:180px;
+        padding: 20px 2% 0 2%
+    }
+}

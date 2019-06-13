@@ -1,0 +1,27 @@
+.video-background{
+    background: #000;
+    bottom: 0;
+    left: 0;
+    height:70%;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -99;
+}
+
+.video-foreground, .video-background iframe{
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+    .video-foreground { width: 300%; left: -100%; }
+}

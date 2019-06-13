@@ -38,8 +38,8 @@ class Badges extends React.Component{
     }
     render(){
         return(
-            <div>
-                {/* <Navbar /> */}
+            <React.Fragment>
+
                 <div className="Badges">
                     <div className="Badges__hero">
                         <div className="Badges__container">
@@ -57,22 +57,12 @@ class Badges extends React.Component{
                 <div className="Badges__list">
                     <div className="container">
                         <BadgesList badges={this.state.data} />
-                        {/* <ul className="list-unstyled">
-                            {this.state.data.map((badge) => {
-                                return(
-                                    <li key={badge.id}>
-                                        <p>{badge.firstName} {badge.lastName}</p>
-                                    </li>
-                                )
-                                    
-                            })}
-                        </ul> */}
                     </div>
                 </div>
 
 
 
-            </div>
+            </React.Fragment>
 
                 
 
